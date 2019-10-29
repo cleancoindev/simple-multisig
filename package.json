@@ -1,28 +1,35 @@
 {
   "name": "simple-multisig",
-  "version": "1.0.4",
+  "version": "1.0.4.dharma-eng-fork",
   "description": "Simple Ethereum multisig contract",
   "main": "test/simplemultisig.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "truffle test"
+    "test": "./node_modules/.bin/truffle test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/christianlundkvist/simple-multisig.git"
+    "url": "git+https://github.com/dharma-eng/simple-multisig.git"
   },
   "keywords": [
     "Ethereum",
     "Wallet"
   ],
-  "author": "christian.lundkvist@gmail.com",
+  "author": "christian.lundkvist@gmail.com (modifications by 0age)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/christianlundkvist/simple-multisig/issues"
+    "url": "https://github.com/dharma-eng/simple-multisig/issues"
   },
-  "homepage": "https://github.com/christianlundkvist/simple-multisig#readme",
+  "homepage": "https://github.com/dharma-eng/simple-multisig#readme",
+  "dependencies": {
+    "ethereumjs-util": "^6.1.0",
+    "ganache-cli": "6.7.0",
+    "solhint": "^2.3.0",
+    "truffle": "^5.0.22",
+    "web3": "1.2.2"
+  },
   "devDependencies": {
     "eth-lightwallet": "*",
     "bluebird": "*"
